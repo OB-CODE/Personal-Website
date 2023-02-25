@@ -1,0 +1,51 @@
+.strip {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-bottom: 5vh;
+  position: relative;
+  z-index: -1;
+}
+
+.Container {
+  padding-top: 20vh;
+  margin-left: 30%;
+
+  h5 {
+    font-size: 8rem;
+    margin: 10px;
+
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .Container {
+    padding-top: 10vh;
+    margin-left: 20%;
+
+    h5 {
+      font-size: 5rem;
+      margin: 10px;
+    }
+
+    h1 {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+.heading {
+  margin-left: spacing(50);
+}
+
+@media (max-width: 768px) {
+.heading {
+  margin-left: spacing(10);
+}}
+
+@media (max-width: 768px) {
+  .jobs {
+    font-size: 3rem;
+  }}

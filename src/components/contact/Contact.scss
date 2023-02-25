@@ -1,0 +1,159 @@
+.container {
+  margin: auto;
+  background-color: aliceblue;
+  padding-top: 3vh;  
+  padding-bottom: 3vh;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  // flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+.vertAlign {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin: auto;
+    margin-top: 10px;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+}
+
+._form_wrapper {
+  width: 30%;
+  display: flex;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.51);
+  background-color: rgba(246, 223, 89, 0.3);
+  z-index: 1;
+  max-width: 100%;
+  height: 25vh;
+  padding: 2em;
+}
+
+.submit-btn {
+  text-align: center;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #ffff;
+  background-color: #0a0a0a;
+  padding: 10px;
+  border-radius: 10px;
+}
+.submit-btn:hover {
+  text-decoration: none;
+  background-color: #ec704c;
+}
+
+.contact_msg {
+  width: 20%;
+  font-size: 3.5rem;
+  margin: 5rem;
+}
+
+@media (max-width: 1024px) {
+  ._form_wrapper {
+
+    margin-left: 4em;
+    margin-right: 4em;
+    padding: 2em;
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    width: 50%;
+    flex-direction: column;
+  }
+  ._form_wrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    padding: 2em;
+    padding-bottom: 4em;
+
+    button {
+      margin-top: 5px;
+      font-size: 0.8rem;
+    }
+  }
+  .contact {
+    flex-direction: column;
+  }
+}
+
+.botStrip {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-bottom: 5vh;
+  text-align: center;
+  z-index: 2;
+
+
+  h3 {
+    padding-top: 1vh;
+    margin: 0;
+  }
+}
+
+.botCircle{
+
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  animation: ripple 8s infinite;
+  box-shadow: 0px 0px 2px 0px #508fb9;
+}
+
+.botSmall {
+  shape-outside: circle(50%) margin-box;
+  position: absolute;
+  bottom: -5vh;
+  left: -5vw;
+  height: 25em;
+  width: 25em;
+  background: rgb(185, 92, 92, 0.7);
+}
+
+.botSmall2 {
+  shape-outside: circle(50%) margin-box;
+  position: absolute;
+  bottom: 25vh;
+  right: -5vw;
+  height: 25em;
+  width: 25em;
+  background: rgb(185, 92, 92, 0.4);
+}
+
+@media (max-width: 1100px) {
+  .botSmall, .botSmall2 {
+    height: 15em;
+    width: 15em;
+  }
+
+  .botSmall2 {
+    top: -5vh;
+    right: -10vw;
+  }
+}
+
+.spreadDetails {
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  a {
+    color: #0a0a0a;
+  }
+}
