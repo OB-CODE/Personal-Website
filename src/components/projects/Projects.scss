@@ -31,6 +31,8 @@
 
 
 .eachContainer {
+  position: relative;
+  z-index: 3;
   max-width: 65%;
   display: flex;
   flex-direction: column;
@@ -133,6 +135,16 @@
   margin-right: 5vw;
 }
 
+@media (max-width: 768px) {
+  .titles {
+    font-size: 1.5rem;
+  }
+  .projectContainer {
+    .heading { 
+      font-size: 2rem;
+    }
+  }
+}
 
 // link CSS
 

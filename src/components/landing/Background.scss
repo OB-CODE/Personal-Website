@@ -1,16 +1,17 @@
 /* for moving background */
 
 
-.background {
-  max-width: 100%;
+.background {  
+  position: absolute;
+  top:0px; 
+  bottom:-150vh; 
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
 
-  div {
-    box-sizing: content-box;
-  }
 }
 
 .circle{
-  position: absolute;
   border-radius: 50%;
   background: rgb(255, 255, 255);
   animation: ripple 8s infinite;
@@ -18,6 +19,7 @@
 }
 
 .small{
+  position: absolute;
   width: 10em;
   height: 10em;
   right: 20vw;
@@ -38,12 +40,13 @@
   .small{
     width: 4em;
     height: 4em;
-    right: 25vw;
+    right: 20vw;
     top: 15vh;
   }
 }
 
 .mediun{
+  position: absolute;
   width: 17em;
   height: 17em;
   right: 9vw;
@@ -70,8 +73,9 @@
 }
 
 .mediunLarge{
-  width: 20em;
-  height: 20em;
+  position: absolute;
+  width: 30em;
+  height: 30em;
   right: 25vw;
   top: -5vh;
   background: rgb(207, 111, 8);
@@ -88,6 +92,7 @@
 
 @media (max-width: 768px) {
   .mediunLarge{
+    position: absolute;
     width: 10em;
     height: 10em;
     right: 25vw;
@@ -97,6 +102,7 @@
 
 
 .large{
+  position: absolute;
   width: 32em;
   height: 32em;
   right: 40vw;
@@ -114,14 +120,15 @@
 
 @media (max-width: 768px) {
   .large{
-    width: 15em;
-    height: 15em;
+    width: 7em;
+    height: 7em;
     right: -10vw;
     top: 15vh;
   }
 }
 
 .xlarge{
+  position: absolute;
   width: 40em;
   height: 40em;
   right: 2vw;
@@ -148,6 +155,7 @@
 }
 
 .xxlarge{
+  position: absolute;
   width: 40em;
   height: 40em;
   right: 10vw;
@@ -166,10 +174,10 @@
 
 @media (max-width: 768px) {
   .xxlarge{
-  width: 22em;
-  height: 22em;
-  right: 30vw;
-  top: -20vh;
+  width: 7em;
+  height: 7em;
+  right: 15vw;
+  top: -4vh;
   }
 }
 
@@ -271,24 +279,21 @@
 
 @media (max-width: 768px) {
   .oppLarge {
-    width: 17em;
-    height: 17em;
-    right: 9vw;
-    top: 15vh;
+   display: none;
   }
 
   .oppLarge2 {
-    width: 17em;
-    height: 17em;
+    width: 11em;
+    height: 11em;
     right: -10vw;
     top: -8vh;
   }
 
   .oppMedium {
-    width: 13em;
-    height: 13em;
+    width: 8em;
+    height: 8em;
     left: -15vw;
-    top: 55vh;
+    top: 60vh;
   }
 }
 
@@ -331,6 +336,7 @@
 }
 
 .oppLarge3 {
+  z-index: 1;
   width: 32em;
   height: 32em;
   right: -10vw;
@@ -363,14 +369,14 @@
 
 @media (max-width: 768px) {
   .oppLarge3 {
-    width: 10em;
-    height: 10em;
-    right: -10vw;
+    width: 8em;
+    height: 8em;
+    right: -8vw;
     top: 200vh;
   }
   .oppLarge4 {
-    width: 10em;
-    height: 10em;
+    width: 8em;
+    height: 8em;
     left: -10vw;
     top: 150vh;
   }

@@ -5,6 +5,7 @@ const LandingHeader = () => {
   return (
     <div>
       <div className="strip"></div>
+
       <div className='Container'>
         <div className="heading">
           <h5>Mitch</h5>
