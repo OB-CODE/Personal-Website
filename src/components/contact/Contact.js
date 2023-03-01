@@ -71,11 +71,12 @@ const Contact = () => {
                   minRows={5}
                   variant="filled"
                   name="message"
-                  className=''
+                  className='reduce'
                 />
                 <button type="submit" value="Send" className="submit-btn">
                 <i className="fas fa-terminal"></i>
-                  <div component='span'> Send Message</div>
+                  <div className="botBut"
+                  component='span'> Send Message</div>
                 </button>
               </form>
             </div>

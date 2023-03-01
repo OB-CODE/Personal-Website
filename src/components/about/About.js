@@ -18,7 +18,7 @@ import o10 from "./assets/ob12.jpeg";
 const About = () => {
   const greetings = "Hello there!";
 
-  const aboutme = `I'm Mitchell O'Brien. I am a software engineering student and I have a passion for problem solving and working with others. With continuous learning as one of my core values, I am seeking an opportunity to utilise my skills developed as an educator with my natural aptitude for analytical and innovative thinking.`;
+  const aboutme = `I'm Mitchell O'Brien. I am a Software Engineer and I have a passion for problem solving and working with others. With continuous learning as one of my core values, I am seeking an opportunity to utilise my skills developed as an educator with my natural aptitude for analytical and innovative thinking.`;
 
   const extendedAboutme = `Throughout General Assembly’s Software Engineering Immersive course, I have learnt what an ‘engineering mindset’ means and how to apply this way of thinking to full-stack development. My current skills include JavaSciprt, HTML/CSS, Ruby, SQL/PostgreSQL, Git and a wide range of workplace tech such as cloud resources. I am looking forward to extending my learning in the areas of Python and Java.`;
 
