@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Projects.scss"
+import logo from "./logo192.png";
 import tic1 from './assets/tic1.png'
 import tic2 from './assets/tic2.png'
 import surf1 from './assets/surf1.png'
@@ -73,6 +74,23 @@ const handleClose = () => setOpen(false);
   return (
   <section id="projects">
     <div className='projectContainer'>
+
+    <div className='botLeft'>
+      <div className="rows">
+        <div className="made">Made with React:</div>
+        <div className="landContainer">
+          <img className='rotate' src={logo} alt="" />
+        </div>
+      </div>
+
+      <div className="rows">
+        <div className="host">Hosted on</div>
+        <div className="landContainer">
+          <img src='https://techinscribed.com/wp-content/uploads/2020/01/aws-amplify.png' alt="" />       
+        </div>
+      </div>
+    </div>
+
         <h1 className='heading'>GA COURSE PROJECTS</h1>
 
           {allProjects.map((project, index) =>

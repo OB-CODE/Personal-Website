@@ -40,6 +40,21 @@
 }
 
 
+.landContainer {
+  height: 3vh;
+  
+
+  img {
+    max-height: 100%;
+  }
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  align-items: center
+}
 
 .heading {
   margin-left: spacing(50);
