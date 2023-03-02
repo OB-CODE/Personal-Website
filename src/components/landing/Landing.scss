@@ -11,11 +11,17 @@
 .Container {
   padding-top: 20vh;
   margin-left: 30%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
 
   h5 {
-    font-size: 8rem;
+    font-size: 10rem;
     margin: 10px;
-
+  }
+  h4 {
+    font-size: 10rem;
+    margin: 10px;
   }
 
   h1 {
@@ -39,10 +45,6 @@
   }
 }
 
-.jobs {
-  padding-top: 2vh;
-}
-
 .landContainer {
   height: 3vh;
   
@@ -59,9 +61,33 @@
   align-items: center
 }
 
-.heading {
-  margin-left: spacing(50);
+.landHeading {
+width: fit-content;
+height: 20vh;
+}
+
+
+.landHeading h5 {
+  width: fit-content;
   height: 10vh;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 0;
+  letter-spacing: .15em;
+  border-right: .07em solid black;
+  animation: 
+    printToScreen 6s steps(60, end),
+    flash .8s step-end infinite;
+}
+
+@keyframes printToScreen {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes flash {
+  from, to { border-color: transparent }
+  50% { border-color: black }
 }
 
 @media (max-width: 768px) {
@@ -75,6 +101,9 @@
       font-size: 2.5rem;
     }
     h5 {
+      font-size: 3.5rem;
+    }
+    h4 {
       font-size: 3.5rem;
     }
   }
