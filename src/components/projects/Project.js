@@ -105,7 +105,7 @@ const allProjects = [
               
                 <div className='description'>
 
-                  <p>{project.description[0]}</p>
+                  <p className='pad4'>{project.description[0]}</p>
                   <p className='pad1'>- {project.description[1]}</p>
                   <p className='pad2'>- {project.description[2]}</p>
                   <p className='pad3'>- {project.description[3]}</p>

@@ -167,6 +167,10 @@
     max-width: 65%;
     flex-direction: column;
 
+    .git, .url {
+      font-size: 0.6rem;   
+    }
+
     div {
       font-size: 1rem;
     }
@@ -175,6 +179,14 @@
       display: flex;
       flex-direction: column;
       width: 100%;
+
+      h2 {
+        font-size: 1rem;
+      }
+    }
+
+    .pad4 {
+      display: none;
     }
   }
 }
