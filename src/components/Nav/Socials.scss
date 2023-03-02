@@ -5,3 +5,40 @@
   z-index: 1;
 }
 
+.MuiSpeedDial-root {
+  top: 0.4vh;
+
+  button{
+    min-width: 100px;
+    min-height: 100px;
+  }
+}
+
+.MuiSpeedDial-actions {
+  button {
+    min-width: 100px;
+    min-height: 100px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .MuiSpeedDial-root {
+    top: 0.4vh;
+  
+    button{
+      min-width: 50px;
+      min-height: 50px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .MuiSpeedDial-root {
+    top: 0.4vh;
+  
+    button{
+      min-width: 40px;
+      min-height: 40px;
+    }
+  }
+}

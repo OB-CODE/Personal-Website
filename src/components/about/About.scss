@@ -25,20 +25,38 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 .heading {
   width: 30%;
   font-size: 1.15rem;
 }
-._img {
+
+.minHeading {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 4vh;
+  padding-bottom: 1.5vh;
+  max-width: 70%;
+  margin: auto;
+}
+
+.personalImg {
   margin: 2em;
   width: 35em;
   height: 20em;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.51);
+  overflow-y: hidden;
 }
+
+.meAndBoard {
+  max-width: 100%;
+  position: relative;
+  top: -130px;
+}
+
 ._content_wrapper {
   width: 40%;
 }

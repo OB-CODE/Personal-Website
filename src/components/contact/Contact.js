@@ -75,8 +75,7 @@ const Contact = () => {
                 />
                 <button type="submit" value="Send" className="submit-btn">
                 <i className="fas fa-terminal"></i>
-                  <div className="botBut"
-                  component='span'> Send Message</div>
+                  <div component='span'> Send Message</div>
                 </button>
               </form>
             </div>
@@ -92,7 +91,7 @@ const Contact = () => {
             <div key={action.name}>
               <a href={action.url}>
                 <div>{action.name}</div>
-                <div>{action.icon}</div>
+                <svg className="icons" width='50px' height='50px'>{action.icon}</svg>
               </a>
             </div>
           )}

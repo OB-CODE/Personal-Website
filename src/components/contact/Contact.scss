@@ -6,9 +6,8 @@
   position: relative;
   overflow-y: hidden;
   overflow-x: hidden;
-
-
 }
+
 .contact {
   display: flex;
   justify-content: center;
@@ -112,7 +111,7 @@
 
 .botStrip {
   background-color: rgba(0, 0, 0, 0.2);
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
   text-align: center;
   z-index: 2;
 
@@ -183,12 +182,31 @@
 }
 
 .spreadDetails {
-  padding-top: 2vh;
+  padding-top: 1vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  font-size: 1.5rem;
+  gap: 3vw;
+
+
+  .icons {
+    width: 4vw;
+    svg {
+      max-width: 100%;
+    }
+  }
 
   a {
     color: #0a0a0a;
+
+  }
+}
+
+@media (max-width: 800px) {
+  .spreadDetails {
+    .icons {
+      width: 8vw;
+    }
   }
 }

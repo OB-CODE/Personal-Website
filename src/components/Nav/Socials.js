@@ -29,6 +29,7 @@ const Socials = () => {
     <div className="stay">
       <Box sx={{ mt: 0, height: 0, transform: 'translateZ(10px)', flexGrow: 1 }}>
         < StyledSpeedDial
+          className='dropBubble'
           ariaLabel="SpeedDial basic example"
           sx={{ position: 'absolute', bottom: -315, right: 30 }}
           icon={<SpeedDialIcon />}

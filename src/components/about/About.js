@@ -2,17 +2,20 @@ import React from "react";
 import './About.scss';
 import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
-import profile from '../../assets/MitchBoard.jpeg';
-import o1 from "./assets/ob01.jpeg";
-import o2 from "./assets/ob2.jpeg";
-import o3 from "./assets/ob02.jpeg";
-import o4 from "./assets/ob3.jpeg";
-import o5 from "./assets/ob5.png";
-import o6 from "./assets/ob6.jpeg";
-import o7 from "./assets/ob8.jpeg";
-import o8 from "./assets/ob9.jpeg";
-import o9 from "./assets/ob11.jpeg";
-import o10 from "./assets/ob12.jpeg";
+
+let o1 = 'https://i.imgur.com/lOG7JMC.jpg'
+let o2 = 'https://i.imgur.com/xhFxn3Q.png'
+let o3 = 'https://i.imgur.com/8btyeHi.jpg'
+let o4 = 'https://i.imgur.com/1up8ReU.jpg'
+let o5 = 'https://i.imgur.com/WYleF2f.jpg'
+let o6 = 'https://i.imgur.com/YHiXkfM.jpg'
+let o7 = 'https://i.imgur.com/XLGjpfm.jpg'
+let o8 = 'https://i.imgur.com/k1XFcth.jpg'
+let o9 = 'https://i.imgur.com/RsB6yji.jpg'
+let o10 = 'https://i.imgur.com/VhDmbm8.jpg'
+
+const meAndBoard = 'https://i.imgur.com/CatluO0.jpg'
+
 
 
 const About = () => {
@@ -22,20 +25,16 @@ const About = () => {
 
   const extendedAboutme = `Throughout General Assembly’s Software Engineering Immersive course, I have learnt what an ‘engineering mindset’ means and how to apply this way of thinking to full-stack development. My current skills include JavaSciprt, HTML/CSS, Ruby, SQL/PostgreSQL, Git and a wide range of workplace tech such as cloud resources. I am looking forward to extending my learning in the areas of Python and Java.`;
 
+  const imagesHeading = `Some of my favourite places (and of course my dog).`
+
   const images = [ o1, o2, o3, o4, o5, o6, o7, o8, o9, o10 ];
 
   return (
     <section id="about">
       <div className='mainAbout'>
         <div className="about">
-          <div className="_img"
-            style={{ 
-              background: "url(" + profile + ")",
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-            }}
-          >
+          <div className="personalImg">
+            <img className="meAndBoard" src={meAndBoard} alt="" />
           </div>
           <div className="_content_wrapper">
           <a href="#contact" className="contact-btn">
@@ -49,6 +48,7 @@ const About = () => {
               <p className="larger">{extendedAboutme}</p>
           </div>
         </div>
+        <div className="minHeading">{imagesHeading}</div>
       </div>
       <div className="slideshow">
         <Slide>
@@ -61,7 +61,6 @@ const About = () => {
           )}
         </Slide>
       </div>
-
     </section>
   );
 };
