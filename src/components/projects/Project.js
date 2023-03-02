@@ -98,15 +98,18 @@ const allProjects = [
             <div className='eachContainer'>
               <div className="leftDetails">
                 {/* <div className='name' >Project Name: {project.name}</div> */}
-                <div className='git'><a href={project.gitHub}>Link to project's GITHUB</a></div>
-                <div className='url'><a href={project.url}>Link to LIVE URL</a></div>
+                <div className='buttonsPro'>
+                    <div className='git'><a href={project.gitHub}>Link to project's GITHUB</a></div>
+                    <div className='url'><a href={project.url}>Link to LIVE URL</a></div>
+                </div>
+              
                 <div className='description'>
 
                   <p>{project.description[0]}</p>
-                  <p className='pad'>- {project.description[1]}</p>
-                  <p className='pad'>- {project.description[2]}</p>
-                  <p className='pad'>- {project.description[3]}</p>
-                  <p className='pad'>- {project.description[4]}</p>
+                  <p className='pad1'>- {project.description[1]}</p>
+                  <p className='pad2'>- {project.description[2]}</p>
+                  <p className='pad3'>- {project.description[3]}</p>
+                  <p className='pad4'>- {project.description[4]}</p>
                 </div>
               </div>
 

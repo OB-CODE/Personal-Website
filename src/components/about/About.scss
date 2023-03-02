@@ -6,16 +6,21 @@
   font-size: 1.7rem;
 }
 
-@media (max-width: 768px) {
-  .larger {
-      display: none;
-  }
-}
 
 .mainAbout {
   max-width: 100%;
   margin-top: 3em;
   margin-bottom: auto;
+}
+
+@media (max-width: 768px) {
+  .about{
+      max-width: 80%;
+  }
+
+  .larger {
+      display: none;
+  }
 }
 
 .about {
