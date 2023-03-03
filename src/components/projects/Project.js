@@ -34,28 +34,28 @@ const allProjects = [
       images: [HomeH1, HomeH2],
       gitHub: "https://github.com/OB-CODE/Home-Harvest",
       url: 'https://mitchell-home-harvest.surge.sh/',
-      description: [`About:`, `Home Harvest is designed to reduce the barriers of entry for the everyday person trying to grow produce.`, `3 API's intergrated and a personal database.`, `Renders 12 months of weather data in table and graph format.`, `Calculates ideal planting times based off growing conditions for each crop.` ]
+      description: [`TECH STACK: React/JS/MUI, Postman, Surge`, `Home Harvest is designed to reduce the barriers of entry for the everyday person trying to grow produce.`, `3 API's intergrated and a personal database.`, `Renders 12 months of weather data in table and graph format.`, `Calculates ideal planting times based off growing conditions for each crop.` ]
       },
       {
       name: 'Pokemon EXPRESS game',
       images: [poke1, poke2],
       gitHub: "https://github.com/OB-CODE/pokemon-game",
       url: 'https://pokebattles.mitch-obrien.com/',
-      description: [`About:`, `Craft thoughtful user stories together, as a team`, `Manage team contributions and collaboration using a standard Git flow on Github`, `Layout and style your front-end with clean & well-formatted CSS`, `Include separate HTML / CSS / JavaScript files`, `GOAL: Work with other classmates to architect, design, and collaboratively build a product.`]
+      description: [`TECH STACK: Epress/Node.js/JS, SQL, Middleware(sessions):`, `Craft thoughtful user stories together, as a team`, `Manage team contributions and collaboration using a standard Git flow on Github`, `Layout and style your front-end with clean & well-formatted CSS`, `Include separate HTML / CSS / JavaScript files`, `GOAL: Work with other classmates to architect, design, and collaboratively build a product.`]
       },
       {
       name: 'Surf Spot - Fly.io currenlty down)',
       images: [surf1, surf2],
       gitHub: "https://github.com/OB-CODE/Surf-spot-SEI-Project-2",
       url: 'https://github.com/OB-CODE/Surf-spot-SEI-Project-2',
-      description: [`About:`, `Use API calls to SQL tables`, `Include sign up/log in functionality, encrypted passwords & an authorization flow`, `Have complete RESTful routes for at least one of your resources with GET, POST, PATCH, and DELETE`, `DESCRIPTION: Surf Spot allows full CRUD features and is a full stack application build using Ruby. It intergrates with a custome backend API and global weather data.` ]
+      description: [`TECH STACK: Ruby, SQL:`, `Use API calls to SQL tables`, `Include sign up/log in functionality, encrypted passwords & an authorization flow`, `Have complete RESTful routes for at least one of your resources with GET, POST, PATCH, and DELETE`, `DESCRIPTION: Surf Spot allows full CRUD features and is a full stack application build using Ruby. It intergrates with a custome backend API and global weather data.` ]
       },
       {
       name: 'Tic-Tac-Toe',
       images: [tic1, tic2],
       gitHub: "https://github.com/OB-CODE/Tic-Tac-Toe",
       url: 'https://ob-code.github.io/Tic-Tac-Toe/',
-      description: [`About:`, `Render a game in the browser`, `Switch turns between more than one player`, `Design logic for winning & visually display which player won`, `Include separate HTML / CSS / JavaScript files`, `Use Javascript for DOM manipulation`]
+      description: [`TECH STACK: JS/HTML/CSS, Github hosting:`, `Render a game in the browser`, `Switch turns between more than one player`, `Design logic for winning & visually display which player won`, `Include separate HTML / CSS / JavaScript files`, `Use Javascript for DOM manipulation`]
       }
 
 ]
@@ -105,6 +105,9 @@ const allProjects = [
             <div className='eachContainer'>
               <div className="leftDetails">
                 {/* <div className='name' >Project Name: {project.name}</div> */}
+                <p className='pad4'>{project.description[0]}</p>
+                
+                PROJECT LINKS
                 <div className='buttonsPro'>
                     <div className='git'>
                       GITHUB
@@ -124,7 +127,6 @@ const allProjects = [
               
                 <div className='description'>
 
-                  <p className='pad4'>{project.description[0]}</p>
                   <p className='pad1'>- {project.description[1]}</p>
                   <p className='pad2'>- {project.description[2]}</p>
                   <p className='pad3'>- {project.description[3]}</p>

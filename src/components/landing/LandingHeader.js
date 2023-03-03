@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Landing.scss";
+import Job from "./Job.js";
 
 
 
@@ -14,7 +15,7 @@ const LandingHeader = () => {
           <h5 className='second'>O'Brien.</h5>
         </div>
         <h1 className='jobs'>
-        {`<Software Engineer />`}
+          <Job />
          </h1>
       </div>
     </div>
