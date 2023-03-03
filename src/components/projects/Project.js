@@ -40,14 +40,14 @@ const allProjects = [
       name: 'Pokemon EXPRESS game',
       images: [poke1, poke2],
       gitHub: "https://github.com/OB-CODE/pokemon-game",
-      url: 'https://github.com/OB-CODE/pokemon-game/blob/main',
+      url: 'https://pokebattles.mitch-obrien.com/',
       description: [`About:`, `Craft thoughtful user stories together, as a team`, `Manage team contributions and collaboration using a standard Git flow on Github`, `Layout and style your front-end with clean & well-formatted CSS`, `Include separate HTML / CSS / JavaScript files`, `GOAL: Work with other classmates to architect, design, and collaboratively build a product.`]
       },
       {
       name: 'Surf Spot - Fly.io currenlty down)',
       images: [surf1, surf2],
       gitHub: "https://github.com/OB-CODE/Surf-spot-SEI-Project-2",
-      url: '',
+      url: 'https://github.com/OB-CODE/Surf-spot-SEI-Project-2',
       description: [`About:`, `Use API calls to SQL tables`, `Include sign up/log in functionality, encrypted passwords & an authorization flow`, `Have complete RESTful routes for at least one of your resources with GET, POST, PATCH, and DELETE`, `DESCRIPTION: Surf Spot allows full CRUD features and is a full stack application build using Ruby. It intergrates with a custome backend API and global weather data.` ]
       },
       {
