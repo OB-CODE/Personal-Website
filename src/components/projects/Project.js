@@ -18,6 +18,13 @@ import { Slide } from 'react-slideshow-image';
 // import Typography from '@mui/material/Typography';
 // import Modal from '@mui/material/Modal';
 
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LanguageIcon from '@mui/icons-material/Language';
+const projectLinks = [
+  { icon: <GitHubIcon />, name: 'GitHub' },
+  { icon: <LanguageIcon />, name: 'www' },
+]
+
 
 const Projects = () => {
 
@@ -34,21 +41,21 @@ const allProjects = [
       images: [poke1, poke2],
       gitHub: "https://github.com/OB-CODE/pokemon-game",
       url: 'https://github.com/OB-CODE/pokemon-game/blob/main',
-      description: [`Requirements:`, `Craft thoughtful user stories together, as a team`, `Manage team contributions and collaboration using a standard Git flow on Github`, `Layout and style your front-end with clean & well-formatted CSS`, `Include separate HTML / CSS / JavaScript files`, `GOAL: Work with other classmates to architect, design, and collaboratively build a product.`]
+      description: [`About:`, `Craft thoughtful user stories together, as a team`, `Manage team contributions and collaboration using a standard Git flow on Github`, `Layout and style your front-end with clean & well-formatted CSS`, `Include separate HTML / CSS / JavaScript files`, `GOAL: Work with other classmates to architect, design, and collaboratively build a product.`]
       },
       {
-      name: 'Surf Spot - Currently down (Need to change hositng from Fly.io)',
+      name: 'Surf Spot - Fly.io currenlty down)',
       images: [surf1, surf2],
       gitHub: "https://github.com/OB-CODE/Surf-spot-SEI-Project-2",
       url: '',
-      description: [`Requirements:`, `Have at least 2 resources(tables) (more if they make sense) – one representing someone using your application, and one that represents the main functional idea for your app`, `Include sign up/log in functionality(if they make sense), with encrypted passwords & an authorization flow`, `Have complete RESTful routes for at least one of your resources with GET, POST, PATCH, and DELETE`, `DESCRIPTION: Surf Spot allows full CRUD features and is a full stack application build using Ruby. It intergrates with a custome backend API and global weather data.` ]
+      description: [`About:`, `Use API calls to SQL tables`, `Include sign up/log in functionality, encrypted passwords & an authorization flow`, `Have complete RESTful routes for at least one of your resources with GET, POST, PATCH, and DELETE`, `DESCRIPTION: Surf Spot allows full CRUD features and is a full stack application build using Ruby. It intergrates with a custome backend API and global weather data.` ]
       },
       {
       name: 'Tic-Tac-Toe',
       images: [tic1, tic2],
       gitHub: "https://github.com/OB-CODE/Tic-Tac-Toe",
       url: 'https://ob-code.github.io/Tic-Tac-Toe/',
-      description: [`Requirements:`, `Render a game in the browser`, `Switch turns between more than one player`, `Design logic for winning & visually display which player won`, `Include separate HTML / CSS / JavaScript files`, `Use Javascript for DOM manipulation`]
+      description: [`About:`, `Render a game in the browser`, `Switch turns between more than one player`, `Design logic for winning & visually display which player won`, `Include separate HTML / CSS / JavaScript files`, `Use Javascript for DOM manipulation`]
       }
 
 ]
@@ -83,7 +90,7 @@ const allProjects = [
       </div>
 
       <div className="rows">
-        <div className="host">Hosted on</div>
+        <div className="host">Hosted on:</div>
         <div className="landContainer">
           <img src='https://techinscribed.com/wp-content/uploads/2020/01/aws-amplify.png' alt="" />       
         </div>
@@ -99,8 +106,20 @@ const allProjects = [
               <div className="leftDetails">
                 {/* <div className='name' >Project Name: {project.name}</div> */}
                 <div className='buttonsPro'>
-                    <div className='git'><a href={project.gitHub}>Link to project's GITHUB</a></div>
-                    <div className='url'><a href={project.url}>Link to LIVE URL</a></div>
+                    <div className='git'>
+                      GITHUB
+                      <a href={project.gitHub}>
+                          <div className="icon">{projectLinks[0].icon}
+                          </div>
+                      </a>
+                    </div>
+                    <div className='url'>
+                      WWW LINK
+                      <a href={project.url}>
+                          <div className="icon">{projectLinks[1].icon}
+                          </div> 
+                      </a>
+                    </div>
                 </div>
               
                 <div className='description'>

@@ -5,7 +5,7 @@
   padding-bottom: 5vh;
 
   .description {
-    font-size: 2rem;
+    font-size: 2.2rem;
     display: flex;
     flex-direction: column;
   }
@@ -69,7 +69,7 @@
   max-width: 65%;
   display: flex;
   flex-direction: row;
-  background-color: rgba(225, 223, 223, 0.745);
+  background-color: rgba(133, 173, 175, 0.745);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   padding: 20px;
   margin: 15px auto;
@@ -96,19 +96,28 @@
       margin-bottom: 1vh;
     }
 
-    .description {
-      text-align: center;
-    }
-
     p {
       padding-left: 4px;
     }
   }
 
+  .icon {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 4;
 
+    svg {
+      color: #00132C;
+      font-size:10vw;
+    }
+
+  }
 
   .rightContent {
-    width: 60%;
+    width: 55%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -118,6 +127,7 @@
 
 
 .images {
+  background-color: white;
   display: flex;
   justify-content: center;
   max-width: 100%;
@@ -130,25 +140,18 @@
 
 .buttonsPro {
   display: flex;
-  flex-direction: row;
   gap: 1vw;
+  max-width: 80%;
 }
 
-@media (max-width: 2400px) {
-  .eachContainer {
-    .leftDetails {
-
-      font-size: 1.2rem;
-
-      .description {
-        font-size: 0.8rem;
-      }
-    }
-  }
-}
 
 @media (max-width: 1100px) {
+  
   .eachContainer {
+    .description {
+      font-size: 1.5rem;
+    }
+
     .rightContent {
       display: flex;
       flex-direction: column;
@@ -159,7 +162,6 @@
     font-size: 1.5rem;
     margin-right: 5vw;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -168,7 +170,8 @@
     flex-direction: column;
 
     .git, .url {
-      font-size: 0.6rem;   
+      font-size: 0.6rem; 
+      padding: 0; 
     }
 
     div {
@@ -187,6 +190,10 @@
 
     .pad4 {
       display: none;
+    }
+
+    .description {
+      font-size: 0.8rem;
     }
   }
 }
@@ -212,15 +219,11 @@
 // link CSS
 
 .git {
-  background-color:rgba(180, 209, 51, 0.649);
+  max-width: 45%;
+  background-color:rgb(243, 248, 168);
   border: 1px solid #266DB6;
-  box-sizing: border-box;
   color: #00132C;
   font-family: "Avenir Next LT W01 Bold",sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  padding: 16px 23px;
   position: relative;
   text-decoration: none;
   user-select: none;
@@ -258,20 +261,15 @@
 
 @media (min-width: 768px) {
   .git {
-    padding: 16px 32px;
   }
 }
 
 .url {
-  background-color:rgba(67, 198, 47, 0.516);
+  max-width: 45%;
+  background-color:rgba(163, 247, 150, 0.516);
   border: 1px solid #266DB6;
-  box-sizing: border-box;
   color: #00132C;
   font-family: "Avenir Next LT W01 Bold",sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  padding: 16px 23px;
   position: relative;
   text-decoration: none;
   user-select: none;
@@ -309,7 +307,6 @@
 
 @media (min-width: 768px) {
   .url {
-    padding: 16px 32px;
   }
 }
 
