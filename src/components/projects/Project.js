@@ -1,12 +1,7 @@
 import React from 'react'
 import "./Projects.scss"
 import logo from "./logo192.png";
-import tic1 from './assets/tic1.png'
-import tic2 from './assets/tic2.png'
-import surf1 from './assets/surf1.png'
-import surf2 from './assets/surf2.png'
-import HomeH1 from './assets/HomeH1.png'
-import HomeH2 from './assets/HomeH2.png'
+
 // import { Link } from '@mui/material'
 import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
@@ -22,6 +17,18 @@ const projectLinks = [
   { icon: <GitHubIcon />, name: 'GitHub' },
   { icon: <LanguageIcon />, name: 'www' },
 ]
+let tic1 = 'https://i.imgur.com/5RvAeCD.png'
+let tic2 = 'https://i.imgur.com/rSEqpBH.png'
+
+let surf1 = 'https://i.imgur.com/K3pVBKp.png'
+let surf2 = 'https://i.imgur.com/BlgdTYj.png'
+
+
+
+let home1 = 'https://i.imgur.com/IGiN5E6.jpg'
+let home2 = 'https://i.imgur.com/CEYNAzq.png'
+let home3 = 'https://i.imgur.com/Ri82oKt.png'
+let home4 = 'https://i.imgur.com/BP4z9tH.png'
 
 
 let poke1 = 'https://i.imgur.com/bm3WoUT.jpg'
@@ -37,7 +44,7 @@ const Projects = () => {
 const allProjects = [
       {
       name: 'Home Harvest (Final Project)',
-      images: [HomeH1, HomeH2],
+      images: [home1, home2, home3, home4],
       gitHub: "https://github.com/OB-CODE/Home-Harvest",
       url: 'https://mitchell-home-harvest.surge.sh/',
       description: [`TECH STACK: React/JS/MUI, Postman, Surge`, `Home Harvest is designed to reduce the barriers of entry for the everyday person trying to grow produce.`, `3 API's intergrated and a personal database.`, `Renders 12 months of weather data in table and graph format.`, `Calculates ideal planting times based off growing conditions for each crop.` ]
