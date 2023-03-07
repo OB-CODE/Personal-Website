@@ -5,8 +5,6 @@ import tic1 from './assets/tic1.png'
 import tic2 from './assets/tic2.png'
 import surf1 from './assets/surf1.png'
 import surf2 from './assets/surf2.png'
-import poke1 from './assets/poke1.png'
-import poke2 from './assets/poke2.png'
 import HomeH1 from './assets/HomeH1.png'
 import HomeH2 from './assets/HomeH2.png'
 // import { Link } from '@mui/material'
@@ -26,6 +24,14 @@ const projectLinks = [
 ]
 
 
+let poke1 = 'https://i.imgur.com/bm3WoUT.jpg'
+let poke2 = 'https://i.imgur.com/LJ5cebT.jpg'
+let poke3 = 'https://i.imgur.com/orTjwnv.jpg'
+let poke4 = 'https://i.imgur.com/qLDS1HU.jpg'
+let poke5 = 'https://i.imgur.com/pjQLVw5.png'
+let poke6 = 'https://i.imgur.com/4tEeCTy.png'
+let poke7 = 'https://i.imgur.com/18Nmo6L.png'
+
 const Projects = () => {
 
 const allProjects = [
@@ -38,7 +44,7 @@ const allProjects = [
       },
       {
       name: 'Pokemon EXPRESS game',
-      images: [poke1, poke2],
+      images: [poke1, poke2, poke3, poke4, poke5, poke6, poke7],
       gitHub: "https://github.com/OB-CODE/pokemon-game",
       url: 'https://pokebattles.mitch-obrien.com/',
       description: [`TECH STACK: Epress/Node.js/JS, SQL, Middleware(sessions):`, `Craft thoughtful user stories together, as a team`, `Manage team contributions and collaboration using a standard Git flow on Github`, `Layout and style your front-end with clean & well-formatted CSS`, `Include separate HTML / CSS / JavaScript files`, `GOAL: Work with other classmates to architect, design, and collaboratively build a product.`]
