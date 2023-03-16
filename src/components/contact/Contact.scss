@@ -1,4 +1,8 @@
-.container {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.containerContact {
   margin: auto;
   background-color: aliceblue;
   padding-top: 3vh;  
@@ -10,6 +14,7 @@
 
 .contact {
   display: flex;
+  align-items: center;
   justify-content: center;
   // flex-direction: column;
   width: 90%;

@@ -54,7 +54,7 @@ const allProjects = [
       images: [poke1, poke2, poke3, poke4, poke5, poke6, poke7],
       gitHub: "https://github.com/OB-CODE/pokemon-game",
       url: 'https://pokebattles.mitch-obrien.com/',
-      description: [`TECH STACK: Epress/Node.js/JS, SQL, Middleware(sessions):`, `Craft thoughtful user stories together, as a team`, `Manage team contributions and collaboration using a standard Git flow on Github`, `Layout and style your front-end with clean & well-formatted CSS`, `Include separate HTML / CSS / JavaScript files`, `GOAL: Work with other classmates to architect, design, and collaboratively build a product.`]
+      description: [`TECH STACK: Epress/Node.js/JS, SQL, Middleware, AWS EC2 deployed with Docker`, `Craft thoughtful user stories together, as a team`, `Manage team contributions and collaboration using a standard Git flow on Github`, `Layout and style your front-end with clean & well-formatted CSS`, `Include separate HTML / CSS / JavaScript files`, `GOAL: Work with other classmates to architect, design, and collaboratively build a product.`]
       },
       {
       name: 'Surf Spot - Fly.io currenlty down)',
